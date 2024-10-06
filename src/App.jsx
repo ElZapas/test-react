@@ -19,8 +19,9 @@ export default function App() {
         <p>Body: {post.body}</p>
       </div>))}
     </>
-  )
+  );
 }
+
 
 
 
