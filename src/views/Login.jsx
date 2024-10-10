@@ -1,6 +1,4 @@
 import FormComponent from '../components/FormComponent'
-
-
 export default function Login() {
   return (
     <>
