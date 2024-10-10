@@ -5,6 +5,8 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Login from './views/Login.jsx'
 import Layout from './layouts/Layout.jsx'
 import Home from './views/Home.jsx'
+import Register from './views/Register.jsx'
+
 const router = createHashRouter([
   {
     path: '/',
@@ -17,11 +19,14 @@ const router = createHashRouter([
       {
         path: '',
         element: <Home />
+      }, 
+      {
+        path: '/register',
+        element: <Register/>
       }
     ]
   }
 ])
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
