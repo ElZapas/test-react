@@ -6,6 +6,7 @@ import Login from './views/Login.jsx'
 import Layout from './layouts/Layout.jsx'
 import Home from './views/Home.jsx'
 import Register from './views/Register.jsx'
+import {AppProvider} from './context/AppContext.jsx'
 
 const router = createHashRouter([
   {
@@ -30,6 +31,8 @@ const router = createHashRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AppProvider>
+    <RouterProvider router={router}/>
+    </AppProvider>
   </StrictMode>,
 )
