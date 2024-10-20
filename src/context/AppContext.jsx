@@ -1,8 +1,8 @@
 import { createContext, useState } from "react"
-export const AppContext = createContext() // declarando context API
+export const AppContext = createContext() 
 
 export function AppProvider({children}) {
-    const [user, setUser] = useState('Fabian')
+    const [user, setUser] = useState('valorInput')
     const contextValue = {user, setUser}
   return (
     <AppContext.Provider value={contextValue}>

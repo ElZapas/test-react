@@ -7,6 +7,7 @@ export default function Layout() {
     <Link to="/login">Acceder</Link>
     <Link to="/register">Registrarse</Link>
     <Link to="/">Pagina principal</Link>
+    <Link to="/valor">Valor</Link>
     </nav>
     <Outlet />
     </>

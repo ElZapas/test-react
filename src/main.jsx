@@ -7,6 +7,7 @@ import Layout from './layouts/Layout.jsx'
 import Home from './views/Home.jsx'
 import Register from './views/Register.jsx'
 import {AppProvider} from './context/AppContext.jsx'
+import AppValor from './views/AppValor.jsx'
 
 const router = createHashRouter([
   {
@@ -18,12 +19,16 @@ const router = createHashRouter([
         element: <Login />
       },
       {
-        path: '',
-        element: <Home />
-      }, 
-      {
         path: '/register',
         element: <Register/>
+      },
+      {
+        path: '/valor',
+        element: <AppValor/>
+      }, 
+      {
+        path: '',
+        element: <Home />
       }
     ]
   }
